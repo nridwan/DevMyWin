@@ -37,4 +37,5 @@ I'll create more additional scripts to install development pack of things (most 
 - [ ] Javascript
 - [ ] Go
 - [ ] Flutter
+
 I'm open to request, as long as it's available in main/extras scoop bucket I'll be able to add it. and if it's not, as long as I can identify it as portable apps (not leaving junk configuration anywhere at system), I'll try to add it.
