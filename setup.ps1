@@ -18,9 +18,6 @@ If(Test-CommandNotExists aria2c) {
 If(Test-CommandNotExists git) {
     scoop install git
 }
-If(Test-CommandNotExists v) {
-    Write-Output "V not installed"
-}
 $configGit = ''
 while (-not($configGit.StartsWith('y')) -and -not($configGit.StartsWith('n'))) {
     $configGit = Read-Host "Configure git username/email (y/n)"
