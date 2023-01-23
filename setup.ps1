@@ -29,6 +29,9 @@ if($configGit.StartsWith('y')) {
     git config --global user.email "$email"
 }
 scoop install oh-my-posh
+if(-Not(Test-Path -Path $PROFILE)) {
+    New-Item -Path $PROFILE -ItemType File -Force
+}
 Copy-Item "$(scoop prefix oh-my-posh)\themes\robbyrussel.omp.json" "~/robbyrussel.omp.json"
 Write-Output @"
 oh-my-posh --init --shell pwsh --config ~/robbyrussel.omp.json | Invoke-Expression
