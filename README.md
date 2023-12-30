@@ -26,7 +26,7 @@ And configure:
 4. insert this command:
 ```
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
-irm https://raw.githubusercontent.com/nridwan/DevMyWin/master/setup.ps1 | iex
+irm https://raw.githubusercontent.com/nridwan/DevMyWin/main/setup.ps1 | iex
 ```
 5. Follow the optional question
 6. Done
