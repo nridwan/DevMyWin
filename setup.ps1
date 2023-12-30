@@ -32,9 +32,9 @@ scoop install oh-my-posh
 if(-Not(Test-Path -Path $PROFILE)) {
     New-Item -Path $PROFILE -ItemType File -Force
 }
-Copy-Item "$(scoop prefix oh-my-posh)\themes\robbyrussel.omp.json" "~/robbyrussell.omp.json"
+Copy-Item "$(scoop prefix oh-my-posh)\themes\robbyrussell.omp.json" "~/robbyrussell.omp.json"
 Write-Output @"
-oh-my-posh --init --shell pwsh --config ~/robbyrussel.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~/robbyrussell.omp.json | Invoke-Expression
 Set-PSReadLineOption -HistorySearchCursorMovesToEnd
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
